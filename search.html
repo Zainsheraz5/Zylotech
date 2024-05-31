@@ -16,149 +16,133 @@
     <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="css/login.css">
 
-
-    <title>ZYLO-Tech blogs </title>
+    <title>ZYLO-Tech blogs</title>
 </head>
 
 <body>
-    <nav class="navigation max-width-1 m-auto ">
+    <nav class="navigation max-width-1 m-auto">
         <div class="nav-left"><a href="/"><span><img src="img's/zylo1.jpeg" alt="logo"></span></a>
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
-
-
-                <div class="dropdown">
-                    <button onclick="toggleDropdown()" class="dropbtn">Dropdown🔻</button>
-                    <div id="myDropdown" class="dropdown-content">
-
-                        <button onclick="openForm('loginForm')" class="open-button">Login</button>
-                        <button onclick="openForm('registerForm')" class="open-button">Register</button>
-                        <button class="open-button"><a href="/video.html">video</a></button>
-
+                <li>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn">Dropdown🔻</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <button onclick="openForm('loginForm')" class="open-button">Login</button>
+                            <button onclick="openForm('registerForm')" class="open-button">Register</button>
+                            <a class="open-button" href="/video.html">Video</a>
+                        </div>
                     </div>
-                </div>
-                <!-- login form  -->
-                <div class="form-popup" id="loginForm">
-                    <form class="form-container">
-                        <h2>Login</h2>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <button type="submit" class="btn">Login</button>
-                        <button type="button" class="btn cancel" onclick="closeForm('loginForm')">Close</button>
-                    </form>
-                </div>
-
-                <!-- The Registration Form -->
-                <div class="form-popup" id="registerForm">
-                    <form class="form-container">
-                        <h2>Register</h2>
-                        <label for="username"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="username" required>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <button type="submit" class="btn">Register</button>
-                        <button type="button" class="btn cancel" onclick="closeForm('registerForm')">Close</button>
-                    </form>
-                </div>
+                </li>
+                <li>
+                    <!-- login form -->
+                    <div class="form-popup" id="loginForm">
+                        <form class="form-container">
+                            <h2>Login</h2>
+                            <label for="loginEmail"><b>Email</b></label>
+                            <input type="text" id="loginEmail" placeholder="Enter Email" name="email" required>
+                            <label for="loginPsw"><b>Password</b></label>
+                            <input type="password" id="loginPsw" placeholder="Enter Password" name="psw" required>
+                            <button type="submit" class="btn">Login</button>
+                            <button type="button" class="btn cancel" onclick="closeForm('loginForm')">Close</button>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <!-- registration form -->
+                    <div class="form-popup" id="registerForm">
+                        <form class="form-container">
+                            <h2>Register</h2>
+                            <label for="registerUsername"><b>Username</b></label>
+                            <input type="text" id="registerUsername" placeholder="Enter Username" name="username" required>
+                            <label for="registerEmail"><b>Email</b></label>
+                            <input type="text" id="registerEmail" placeholder="Enter Email" name="email" required>
+                            <label for="registerPsw"><b>Password</b></label>
+                            <input type="password" id="registerPsw" placeholder="Enter Password" name="psw" required>
+                            <button type="submit" class="btn">Register</button>
+                            <button type="button" class="btn cancel" onclick="closeForm('registerForm')">Close</button>
+                        </form>
+                    </div>
+                </li>
                 <li><a href="/contact.html">Contact</a></li>
-
             </ul>
-
         </div>
         <div class="nav-right">
             <form action="/search.html" method="get">
                 <input class="form-input" type="text" name="query" placeholder="Find more">
-                <button class="btn">search</button>
+                <button class="btn">Search</button>
             </form>
         </div>
-
     </nav>
 
     <div class="max-width-1 m-auto">
         <hr>
     </div>
 
-
     <div class="home-articles max-width-1 m-auto font1">
-        <h2>From search </h2>
+        <h2>From search</h2>
 
         <div class="home-article">
-
             <div class="home-article-img">
                 <a href="blogpost2.html"><img src="img's/prof-ai-robo-car.jpeg" alt="Robot"></a>
             </div>
-
             <div class="home-article-writing">
                 <a href="blogpost2.html">
-                    <H3>The kingdom of the war II </H3>
-                </a> <SPAN>AUTHOR name: DR. Strange</SPAN>
-                <span>07 march / 5 min read </span>
+                    <h3>The kingdom of the war II</h3>
+                </a>
+                <span>AUTHOR name: DR. Strange</span>
+                <span>07 March / 5 min read</span>
             </div>
         </div>
-        <!-- 1 -->
 
         <div class="home-article">
-
             <div class="home-article-img">
                 <a href="blogpost3.html"><img src="img's/lock-network.jpg" alt="ENCRYPTION SYSTEM"></a>
             </div>
-
             <div class="home-article-writing">
                 <a href="blogpost3.html">
-                    <H3>The kingdom of the war II </H3>
-                </a> <SPAN>AUTHOR name: DR. Strange</SPAN>
-                <span>07 march / 5 min read </span>
+                    <h3>The kingdom of the war II</h3>
+                </a>
+                <span>AUTHOR name: DR. Strange</span>
+                <span>07 March / 5 min read</span>
             </div>
         </div>
-        <!-- 2 -->
-
 
         <div class="home-article">
-
             <div class="home-article-img">
                 <a href="blogpost.html"><img src="img's/2030-car.jpg" alt="CAR"></a>
             </div>
-
             <div class="home-article-writing">
                 <a href="blogpost.html">
-                    <H3>The kingdom of the war II </H3>
-                </a> <SPAN>AUTHOR name: DR. Strange</SPAN>
-                <span>07 march / 5 min read </span>
+                    <h3>The kingdom of the war II</h3>
+                </a>
+                <span>AUTHOR name: DR. Strange</span>
+                <span>07 March / 5 min read</span>
             </div>
         </div>
-        <!-- 3 -->
 
         <div class="home-article">
-
             <div class="home-article-img">
-                <a href="blogpost4.html"> <img src="img's/earth-men.jpg" alt="GLOBAL NETWORKS"></a>
+                <a href="blogpost4.html"><img src="img's/earth-men.jpg" alt="GLOBAL NETWORKS"></a>
             </div>
-
             <div class="home-article-writing">
                 <a href="blogpost4.html">
-                    <H3>The kingdom of the war II </H3>
-                </a> <SPAN>AUTHOR name: DR. Strange</SPAN>
-                <span>07 march / 5 min read </span>
+                    <h3>The kingdom of the war II</h3>
+                </a>
+                <span>AUTHOR name: DR. Strange</span>
+                <span>07 March / 5 min read</span>
             </div>
         </div>
-        <!-- 4 -->
     </div>
 
     <script src="js/dropdown.js"></script>
     <script src="js/login.js"></script>
 
-    <div class="footer ">
-        <p>COPY RIGHT&COPY;Zylotechblogs</p>
-        <a href="https://www.vecteezy.com/free-vector/business"> Business Vectors by Vecteezy</a>
-
+    <div class="footer">
+        <p>COPY RIGHT &COPY; Zylotechblogs</p>
+        <a href="https://www.vecteezy.com/free-vector/business">Business Vectors by Vecteezy</a>
     </div>
-
-
 </body>
 
 </html>

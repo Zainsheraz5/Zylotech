@@ -16,132 +16,102 @@
     <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="css/login.css">
 
-    <title>ZYLO-Tech blogs </title>
+    <title>ZYLO-Tech blogs</title>
 </head>
 
 <body>
-    <nav class="navigation max-width-1 m-auto ">
-        <div class="nav-left"><a href="/"><span><img src="img's/zylo1.jpeg" alt="logo"></span></a>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/"><span><img src="img's/zylo1.jpeg" alt="logo"></span></a>
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
-                
-
-                <div class="dropdown">
+                <li class="dropdown">
                     <button onclick="toggleDropdown()" class="dropbtn">Dropdown🔻</button>
                     <div id="myDropdown" class="dropdown-content">
-
                         <button onclick="openForm('loginForm')" class="open-button">Login</button>
                         <button onclick="openForm('registerForm')" class="open-button">Register</button>
-                        <button class="open-button"><a href="/video.html">video</a></button>
-
+                        <a href="/video.html" class="open-button">Video</a>
                     </div>
-                </div>
-                <!-- login form  -->
-                <div class="form-popup" id="loginForm">
-                    <form class="form-container">
-                        <h2>Login</h2>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <button type="submit" class="btn">Login</button>
-                        <button type="button" class="btn cancel" onclick="closeForm('loginForm')">Close</button>
-                    </form>
-                </div>
-
-                <!-- The Registration Form -->
-                <div class="form-popup" id="registerForm">
-                    <form class="form-container">
-                        <h2>Register</h2>
-                        <label for="username"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="username" required>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <button type="submit" class="btn">Register</button>
-                        <button type="button" class="btn cancel" onclick="closeForm('registerForm')">Close</button>
-                    </form>
-                </div>
+                </li>
                 <li><a href="/contact.html">Contact</a></li>
-
             </ul>
-
         </div>
         <div class="nav-right">
             <form action="/search.html" method="get">
                 <input class="form-input" type="text" name="query" placeholder="Find more">
-                <button class="btn">search</button>
+                <button class="btn">Search</button>
             </form>
         </div>
-
     </nav>
+
     <div class="max-width-1 m-auto">
         <hr>
     </div>
 
+    <div class="form-popup" id="loginForm">
+        <form class="form-container">
+            <h2>Login</h2>
+            <label for="loginEmail"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="loginEmail" required>
+            <label for="loginPsw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="loginPsw" required>
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm('loginForm')">Close</button>
+        </form>
+    </div>
+
+    <div class="form-popup" id="registerForm">
+        <form class="form-container">
+            <h2>Register</h2>
+            <label for="registerUsername"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" id="registerUsername" required>
+            <label for="registerEmail"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="registerEmail" required>
+            <label for="registerPsw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="registerPsw" required>
+            <button type="submit" class="btn">Register</button>
+            <button type="button" class="btn cancel" onclick="closeForm('registerForm')">Close</button>
+        </form>
+    </div>
 
     <div class="video-box">
         <h2>Video</h2><br>
-        <p>We can help you turn your idea into reality, take over your existing project, or extend your current
-            development team. </p>
+        <p>We can help you turn your idea into reality, take over your existing project, or extend your current development team.</p>
 
         <div class="video-1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p><iframe width="500vw" height="500vh"
-                src="https://www.youtube.com/embed/6tUWYXe9qbY" title="This Car Is Alive!" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <iframe width="500" height="500" src="https://www.youtube.com/embed/6tUWYXe9qbY" title="This Car Is Alive!" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-
 
         <div class="video-1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p><iframe width="500vw" height="500vh"
-                src="https://www.youtube.com/embed/ekgUjyWe1Yc" title="World&#39;s Coolest Concept Car - Mercedes AVTR"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <iframe width="500" height="500" src="https://www.youtube.com/embed/ekgUjyWe1Yc" title="World's Coolest Concept Car - Mercedes AVTR" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-
 
         <div class="video-1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p><iframe width="500vw" height="500vh"
-                src="https://www.youtube.com/embed/2xkODJbAY6Q"
-                title="Timelapse of Future Technology 2 (Sci-Fi Documentary)" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <iframe width="500" height="500" src="https://www.youtube.com/embed/2xkODJbAY6Q" title="Timelapse of Future Technology 2 (Sci-Fi Documentary)" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-
 
         <div class="video-1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p><iframe width="500vw" height="500vh"
-                src="https://www.youtube.com/embed/V37LJY6P8NM"
-                title="What Do We Lack To Be A Type 1 Civilization On The Kardashev Scale?" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <iframe width="500" height="500" src="https://www.youtube.com/embed/V37LJY6P8NM" title="What Do We Lack To Be A Type 1 Civilization On The Kardashev Scale?" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-
 
         <div class="video-1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p><iframe width="500vw" height="500vh"
-                src="https://www.youtube.com/embed/vEd-LqBCONg"
-                title="&quot;Don&#39;t Learn to Code, But Study This Instead...&quot; says NVIDIA CEO Jensen Huang"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <iframe width="500" height="500" src="https://www.youtube.com/embed/vEd-LqBCONg" title="Don't Learn to Code, But Study This Instead..." style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+    </div>
 
-        <script src="js/dropdown.js"></script>
-        <script src="js/login.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/login.js"></script>
 
-
-        <div class="footer ">
-            <p>COPY RIGHT&COPY;Zylotechblogs</p>
-            <a href="https://www.vecteezy.com/free-vector/business"> Business Vectors by Vecteezy</a>
-
-        </div>
+    <div class="footer">
+        <p>COPYRIGHT &copy; Zylotechblogs</p>
+        <a href="https://www.vecteezy.com/free-vector/business">Business Vectors by Vecteezy</a>
+    </div>
 </body>
 
 </html>

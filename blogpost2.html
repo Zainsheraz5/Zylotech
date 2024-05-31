@@ -16,70 +16,72 @@
     <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="css/login.css">
 
-
-    <title>ZYLO-Tech blogs </title>
+    <title>ZYLO-Tech blogs</title>
 </head>
 
 <body>
-    <nav class="navigation max-width-1 m-auto ">
-        <div class="nav-left"><a href="/"><span><img src="img's/zylo1.jpeg" alt="logo"></span></a>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/"><span><img src="img's/zylo1.jpeg" alt="logo"></span></a>
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
-
-
-                <div class="dropdown">
-                    <button onclick="toggleDropdown()" class="dropbtn">Dropdown🔻</button>
-                    <div id="myDropdown" class="dropdown-content">
-
-                        <button onclick="openForm('loginForm')" class="open-button">Login</button>
-                        <button onclick="openForm('registerForm')" class="open-button">Register</button>
-                        <button class="open-button"><a href="/video.html">video</a></button>
-
+                <li>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn">Dropdown🔻</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <button onclick="openForm('loginForm')" class="open-button">Login</button>
+                            <button onclick="openForm('registerForm')" class="open-button">Register</button>
+                            <a href="/video.html" class="open-button">video</a>
+                        </div>
                     </div>
-                </div>
-                <!-- login form  -->
-                <div class="form-popup" id="loginForm">
-                    <form class="form-container">
-                        <h2>Login</h2>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <button type="submit" class="btn">Login</button>
-                        <button type="button" class="btn cancel" onclick="closeForm('loginForm')">Close</button>
-                    </form>
-                </div>
-
-                <!-- The Registration Form -->
-                <div class="form-popup" id="registerForm">
-                    <form class="form-container">
-                        <h2>Register</h2>
-                        <label for="username"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="username" required>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <button type="submit" class="btn">Register</button>
-                        <button type="button" class="btn cancel" onclick="closeForm('registerForm')">Close</button>
-                    </form>
-                </div>
+                </li>
+                <li>
+                    <!-- login form  -->
+                    <div class="form-popup" id="loginForm">
+                        <form class="form-container">
+                            <h2>Login</h2>
+                            <label for="login-email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" id="login-email" required>
+                            <label for="login-psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" id="login-psw" required>
+                            <button type="submit" class="btn">Login</button>
+                            <button type="button" class="btn cancel" onclick="closeForm('loginForm')">Close</button>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <!-- The Registration Form -->
+                    <div class="form-popup" id="registerForm">
+                        <form class="form-container">
+                            <h2>Register</h2>
+                            <label for="register-username"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="username" id="register-username"
+                                required>
+                            <label for="register-email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" id="register-email" required>
+                            <label for="register-psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" id="register-psw" required>
+                            <button type="submit" class="btn">Register</button>
+                            <button type="button" class="btn cancel" onclick="closeForm('registerForm')">Close</button>
+                        </form>
+                    </div>
+                </li>
                 <li><a href="/contact.html">Contact</a></li>
-
             </ul>
-
         </div>
         <div class="nav-right">
             <form action="/search.html" method="get">
                 <input class="form-input" type="text" name="query" placeholder="Find more">
                 <button class="btn">search</button>
             </form>
-
+        </div>
     </nav>
+
     <div class="hr max-width-1 m-auto">
         <hr>
     </div>
+
     <div class="post-img">
         <img src="img's/prof-ai-robo-car.jpeg" alt="Car">
     </div>
@@ -92,32 +94,34 @@
         <h1>The AI Brain</h1>
         <div class="bloginfo-icon">
             <div class="info">
-
                 <div class="graeme-img m10">
                     <a href="https://www.amazon.co.uk/stores/author/B0858FKY3Q"><img src="img's/graeme.jpg"
                             alt="Author"></a>
                 </div>
-
                 <div class="author-name m10">
                     <b>By Graeme Armstrong</b>
                     <div class="p2 m10">
                         Dec 5 - 9 min read 📖
                     </div>
                     <a href="https://www.amazon.co.uk/stores/author/B0858FKY3Q">
-                        <div class="author-profile ">Auther's Profile </div>
+                        <div class="author-profile">Author's Profile</div>
                     </a>
                 </div>
-
             </div>
-
             <div class="icon">
-                <button class="icon1"><a href=""><img src="img's/1543423424.png" alt="social icon"></a></button>
-                <button class="icon1"> <a href=""><img src="img's/download (1).png" alt="social icon"></a></button>
-                <button class="icon1"><a href=""><img src="img's/download.png" alt="social icon"></a></button>
-                <button class="icon1"><a href=""><img src="img's/download (1)234565.png" alt="social icon"></a></button>
-
+                <button class="icon1" onclick="location.href='';">
+                    <img src="img's/1543423424.png" alt="social icon" />
+                </button>
+                <button class="icon1" onclick="location.href='';">
+                    <img src="img's/download(1).png" alt="social icon" />
+                </button>
+                <button class="icon1" onclick="location.href='';">
+                    <img src="img's/download.png" alt="social icon" />
+                </button>
+                <button class="icon1" onclick="location.href='';">
+                    <img src="img's/download(1)234565.png" alt="social icon" />
+                </button>
             </div>
-
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, provident. Beatae expedita
             corrupti,voluptates omnis quod obcaecati temporibus consequatur minus velit praesentium! Veniam maxime
@@ -142,13 +146,15 @@
             iure expedita excepturi. Unde deleniti nostrum asperiores neque ipsum distinctio ab assumenda nesciunt
             excepturi hic eaque ducimus, dolor dolore quis illo sunt illum iusto aliquid quos! Ipsa, sequi magnam atque
             autem quo rerum dolor eaque similique perspiciatis architecto velit quis adipisci id. Laudantium dolore qui
-            blanditiis odit molestias dolorum?</p>
+            blanditiis odit molestias dolorum?
+        </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, impedit dolor? Tenetur, distinctio! Ut, nihil!
             Iusto qui neque quis voluptatum reprehenderit rem repellendus tempora officiis? Consectetur aperiam quo sit
             provident minima facere illum aut illo, inventore numquam accusantium voluptates, veritatis dolor unde
             eligendi repudiandae dolorem tempora! Quaerat fugiat dolores similique corporis! Necessitatibus rerum dicta
             omnis iusto iure iste, maxime voluptate laudantium eaque mollitia culpa quaerat repudiandae ab odit cum
-            harum asperiores quas tenetur reiciendis porro sapiente officiis? Harum, eos temporibus.</p>
+            harum asperiores quas tenetur reiciendis porro sapiente officiis? Harum, eos temporibus.
+        </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae eveniet obcaecati quas, quia quod
             quasi harum, minima iste ut necessitatibus placeat? Error consequatur sunt voluptatum, culpa deleniti,
             excepturi aperiam aspernatur fuga rem corrupti ratione, praesentium eaque consectetur quia iste ex harum
@@ -222,76 +228,59 @@
             placeat consectetur temporibus eligendi hic incidunt iste porro nulla voluptatibus doloribus eius mollitia
             dicta culpa. Dolorem ducimus excepturi et fuga rerum voluptas voluptates sequi doloremque fugiat fugit
             laudantium iste, obcaecati nemo dolorum alias repudiandae voluptatum assumenda ipsum consequatur ratione
-            magnam!</p>
+            magnam!
+        </p>
     </div>
 
-
-
     <div class="home-articles font1">
-        <h2>People who read this aslo showed interest in these </h2>
-
-
+        <h2>People who read this also showed interest in these</h2>
         <div class="row max-width-1 m-auto">
-
             <div class="home-article more-post m-auto">
-
                 <div class="home-article-img">
                     <img src="img's/lock-network.jpg" alt="ENCRYPTION SYSTEM">
                 </div>
-
                 <div class="home-article-writing">
                     <a href="">
-                        <H3>The kingdom of the war II </H3>
+                        <h3>The kingdom of the war II</h3>
                     </a>
                     <div>AUTHOR name: DR. Strange</div>
-                    <span>07 march / 5 min read </span>
+                    <span>07 March / 5 min read</span>
                 </div>
             </div>
-            <!-- 1 -->
             <div class="home-article more-post m-auto">
-
                 <div class="home-article-img">
                     <img src="img's/a-large-screen-showing-codes-in-programing-languag-kicLOWqTRyqOr7v1IMLsBQ-PtD34YMJQveEXtIboCNcpg.jpeg"
                         alt="blue sphere">
                 </div>
-
                 <div class="home-article-writing">
                     <a href="">
-                        <H3>The kingdom of the war II </H3>
+                        <h3>The kingdom of the war II</h3>
                     </a>
                     <div>AUTHOR name: DR. Strange</div>
-                    <span>07 march / 5 min read </span>
+                    <span>07 March / 5 min read</span>
                 </div>
             </div>
-            <!-- 2 -->
-
             <div class="home-article more-post m-auto">
-
                 <div class="home-article-img">
                     <img src="img's/prof-ai-robo-car.jpeg" alt="Robot">
                 </div>
-
                 <div class="home-article-writing">
                     <a href="">
-                        <H3>The kingdom of the war II </H3>
+                        <h3>The kingdom of the war II</h3>
                     </a>
                     <div>AUTHOR name: DR. Strange</div>
-                    <span>07 march / 5 min read </span>
+                    <span>07 March / 5 min read</span>
                 </div>
             </div>
-            <!-- 6 -->
-
         </div>
     </div>
 
     <script src="js/dropdown.js"></script>
     <script src="js/login.js"></script>
 
-
-    <div class="footer ">
-        <p>COPY RIGHT&COPY;Zylotechblogs</p>
-        <a href="https://www.vecteezy.com/free-vector/business"> Business Vectors by Vecteezy</a>
-
+    <div class="footer">
+        <p>COPY RIGHT &COPY; Zylotechblogs</p>
+        <a href="https://www.vecteezy.com/free-vector/business">Business Vectors by Vecteezy</a>
     </div>
 </body>
 

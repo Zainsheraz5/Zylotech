@@ -23,120 +23,78 @@
 <body>
     <nav class="navigation max-width-1 m-auto ">
         <div class="nav-left">
-            <a href="/"><span><img src="img's/zylo1.jpeg" alt="logo here"></span>
-            </a>
-
+            <a href="/"><span><img src="img's/zylo1.jpeg" alt="logo here"></span></a>
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
-          
-
-                <!-- dropdown  -->
-                <div class="dropdown">
-                    <button onclick="toggleDropdown()" class="dropbtn">Dropdown🔻</button>
-                    <div id="myDropdown" class="dropdown-content">
-
-                        <button onclick="openForm('loginForm')" class="open-button">Login</button>
-                        <button onclick="openForm('registerForm')" class="open-button">Register</button>
-                        <button class="open-button"><a href="/video.html">video</a></button>
-
+                <li>
+                    <!-- dropdown -->
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn">Dropdown🔻</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <button onclick="openForm('loginForm')" class="open-button">Login</button>
+                            <button onclick="openForm('registerForm')" class="open-button">Register</button>
+                            <button class="open-button" onclick="location.href='/video.html';">video</button>
+                        </div>
                     </div>
-                </div>
-
-                <!-- login form  -->
-                <div class="form-popup" id="loginForm">
-                    <form class="form-container">
-                        <h2>Login</h2>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <button type="submit" class="btn">Login</button>
-                        <button type="button" class="btn cancel" onclick="closeForm('loginForm')">Close</button>
-                    </form>
-                </div>
-
-                <!-- The Registration Form -->
-                <div class="form-popup" id="registerForm">
-                    <form class="form-container">
-                        <h2>Register</h2>
-                        <label for="username"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username(IF Auther Start With 'AU')" name="username" required>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <button type="submit" class="btn">Register</button>
-                        <button type="button" class="btn cancel" onclick="closeForm('registerForm')">Close</button>
-                    </form>
-                </div>
-                
+                </li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
-
-            <!-- search bar-btn  -->
         </div>
+
         <div class="nav-right">
             <form action="/search.html" method="get">
                 <input class="form-input" type="text" name="query" placeholder="Find more">
                 <button class="btn">search</button>
             </form>
         </div>
-
     </nav>
 
     <div class="max-width-1 m-auto ">
         <hr>
     </div>
-    <!-- content left -->
-    <div class="content max-width-1 m-auto">
 
+    <div class="content max-width-1 m-auto">
         <div class="content-left ">
             <h1>The future Tech</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, provident. Beatae expedita
-                corrupti,voluptates omnis quod obcaecati temporibus consequatur minus velit praesentium! Veniam maxime
-                non quiamolestiae. Veritatis doloremque ex, voluptatum repellendus quos esse aspernatur quisquam
-                eligendi quasaliquid dolore magnam unde! Eius, distinctio vitae Lorem ipsum dolor sit amet consectetur
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, provident. Beatae expedita corrupti,
+                voluptates omnis quod obcaecati temporibus consequatur minus velit praesentium! Veniam maxime non
+                quiamolestiae. Veritatis doloremque ex, voluptatum repellendus quos esse aspernatur quisquam eligendi
+                quas aliquid dolore magnam unde! Eius, distinctio vitae Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Facilis, quae modi recusandae ex impedit quaerat explicabo eum delectus voluptate?
                 Recusandae praesentium ut qui unde animi accusamus, molestias numquam, ipsa est cumque veritatis, modi
                 iste aliquam? Nesciunt cum quo, culpa, labore ducimus ullam quibusdam sint rerum vero exercitationem
                 explicabo soluta atque.</p>
         </div>
-        <!-- content right  -->
         <div class="content-right">
-            <img src="img's/contact.jpeg" width="350px" alt="Pic">
+            <img src="img's/contact.jpeg" width="350" alt="Pic">
         </div>
     </div>
+
     <div class="hr max-width-1 m-auto">
         <hr>
     </div>
-    <!-- main article  -->
+
     <div class="home-articles max-width-1 m-auto font1">
         <h2>Featured Articles </h2>
         <div class="home-article">
-
             <div class="home-article-img">
                 <a href="/blogpost.html"><img src="img's/istockpho.jpg" alt="war-robot"></a>
             </div>
-
             <div class="home-article-writing font2">
                 <a href="/blogpost.html">
-                    <H3>The kingdom of the war II </H3>
+                    <h3>The kingdom of the war II</h3>
                 </a>
                 <div>AUTHOR name: DR. Strange</div>
-                <span>07 march / 5 min read </span>
+                <span>07 March / 5 min read</span>
             </div>
         </div>
-        
-        <!-- 1 -->
         <div class="home-article">
-
             <div class="home-article-img">
                 <a href="/blogpost.html"> <img
                         src="img's/a-sleek-and-modern-3d-render-of-a-tech-blogging-we-4uwgkMzlTsO9nsmxmQVTQw-JFJZPJKET7ioXEgDk8xCtQ.jpeg"
                         alt="blue sphere"></a>
             </div>
-
             <div class="home-article-writing font2">
                 <a href="/blogpost.html">
                     <H3>The kingdom of the war II </H3>
@@ -146,13 +104,10 @@
             </div>
         </div>
         <!-- 2 -->
-
         <div class="home-article">
-
             <div class="home-article-img">
-                <a href="/blogpost.html"> <img src="img's/prof-ai-robo-car.jpeg" alt="Robot"></a>
+                <a href="/blogpost2.html"> <img src="img's/prof-ai-robo-car.jpeg" alt="Robot"></a>
             </div>
-
             <div class="home-article-writing font2">
                 <a href="/blogpost.html">
                     <H3>The kingdom of the war II </H3>
@@ -162,13 +117,10 @@
             </div>
         </div>
         <!-- 3 -->
-
         <div class="home-article">
-
             <div class="home-article-img">
                 <a href="/blogpost.html"> <img src="img's/lock-network.jpg" alt="ENCRYPTION SYSTEM"></a>
             </div>
-
             <div class="home-article-writing font2">
                 <a href="/blogpost.html">
                     <H3>The kingdom of the war II </H3>
@@ -178,13 +130,10 @@
             </div>
         </div>
         <!-- 4 -->
-
         <div class="home-article">
-
             <div class="home-article-img">
-                <a href="/blogpost.html"> <img src="img's/2030-car.jpg" alt="CAR"></a>
+                <a href="/blogpost4.html"> <img src="img's/2030-car.jpg" alt="CAR"></a>
             </div>
-
             <div class="home-article-writing font2">
                 <a href="/blogpost.html">
                     <H3>The kingdom of the war II </H3>
@@ -194,14 +143,11 @@
             </div>
         </div>
         <!-- 5 -->
-
         <div class="home-article">
-
             <div class="home-article-img">
                 <a href="/blogpost.html"><img src="img's/zylo.jpeg" alt="GLOBAL NETWORKS">
                 </a>
             </div>
-
             <div class="home-article-writing font2">
                 <a href="/blogpost.html">
                     <H3>The kingdom of the war II </H3>
@@ -210,15 +156,12 @@
                 <span>07 march / 5 min read </span>
             </div>
         </div>
-
         <!-- 6 -->
         <div class="home-article">
-
             <div class="home-article-img">
                 <a href="/blogpost.html"><img src="img's/war-robo.jpeg" alt="GLOBAL NETWORKS">
                 </a>
             </div>
-
             <div class="home-article-writing font2">
                 <a href="/blogpost.html">
                     <H3>The kingdom of the war II </H3>
@@ -227,17 +170,14 @@
                 <span>07 march / 5 min read </span>
             </div>
         </div>
-
         <!-- 7 -->
         <div class="home-article">
-
             <div class="home-article-img">
-                <a href="/blogpost.html"><img
+                <a href="/blogpost3.html"><img
                         src="img's/a-large-screen-showing-codes-in-programing-languag-kicLOWqTRyqOr7v1IMLsBQ-PtD34YMJQveEXtIboCNcpg.jpeg"
-                        alt="GLOBAL NETWORKS">
+                        alt=" GLOBAL NETWORKS">
                 </a>
             </div>
-
             <div class="home-article-writing font2">
                 <a href="/blogpost.html">
                     <H3>The kingdom of the war II </H3>
@@ -246,15 +186,12 @@
                 <span>07 march / 5 min read </span>
             </div>
         </div>
-
         <!-- 8 -->
         <div class="home-article">
-
             <div class="home-article-img">
                 <a href="/blogpost.html"><img src="img's/2025-car.jpg" alt="GLOBAL NETWORKS">
                 </a>
             </div>
-
             <div class="home-article-writing font2">
                 <a href="/blogpost.html">
                     <H3>The kingdom of the war II </H3>
@@ -263,15 +200,12 @@
                 <span>07 march / 5 min read </span>
             </div>
         </div>
-
         <!-- 9 -->
         <div class="home-article">
-
             <div class="home-article-img">
                 <a href="/blogpost.html"><img src="img's/bwhole-tech.jpg" alt="GLOBAL NETWORKS">
                 </a>
             </div>
-
             <div class="home-article-writing font2">
                 <a href="/blogpost.html">
                     <H3>The kingdom of the war II </H3>
@@ -280,20 +214,15 @@
                 <span>07 march / 5 min read </span>
             </div>
         </div>
-
         <!-- 10 -->
-
-
     </div>
 
     <script src="js/dropdown.js"></script>
     <script src="js/login.js"></script>
 
-
     <div class="footer ">
-        <p>COPY RIGHT&COPY;Zylotechblogs</p>
-        <a href="https://www.vecteezy.com/free-vector/business"> Business Vectors by Vecteezy</a>
-
+        <p>COPYRIGHT &COPY; Zylotechblogs</p>
+        <a href="https://www.vecteezy.com/free-vector/business">Business Vectors by Vecteezy</a>
     </div>
 </body>
 

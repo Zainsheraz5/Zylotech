@@ -16,68 +16,63 @@
     <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="css/login.css">
 
-
-    <title>ZYLO-Tech blogs </title>
+    <title>ZYLO-Tech blogs</title>
 </head>
 
 <body>
-    <nav class="navigation max-width-1 m-auto ">
-        <div class="nav-left"><a href="/"><span><img src="img's/zylo1.jpeg" alt="logo"></span></a>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/"><span><img src="img's/zylo1.jpeg" alt="logo"></span></a>
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
-                
-                
-                <div class="dropdown">
-                    <button onclick="toggleDropdown()" class="dropbtn">Dropdown🔻</button>
-                    <div id="myDropdown" class="dropdown-content">
-
-                        <button onclick="openForm('loginForm')" class="open-button">Login</button>
-                        <button onclick="openForm('registerForm')" class="open-button">Register</button>
-                        <button class="open-button"><a href="/video.html">video</a></button>
-
+                <li>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn">Dropdown🔻</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <button onclick="openForm('loginForm')" class="open-button">Login</button>
+                            <button onclick="openForm('registerForm')" class="open-button">Register</button>
+                            <a href="/video.html" class="open-button">video</a>
+                        </div>
                     </div>
-                </div>
-                <!-- login form  -->
-                <div class="form-popup" id="loginForm">
-                    <form class="form-container">
-                        <h2>Login</h2>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <button type="submit" class="btn">Login</button>
-                        <button type="button" class="btn cancel" onclick="closeForm('loginForm')">Close</button>
-                    </form>
-                </div>
-
-                <!-- The Registration Form -->
-                <div class="form-popup" id="registerForm">
-                    <form class="form-container">
-                        <h2>Register</h2>
-                        <label for="username"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="username" required>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <button type="submit" class="btn">Register</button>
-                        <button type="button" class="btn cancel" onclick="closeForm('registerForm')">Close</button>
-                    </form>
-                </div>
-
-                <li><a href="/about.html">About</a></li>
-
+                </li>
             </ul>
-
         </div>
         <div class="nav-right">
             <form action="/search.html" method="get">
                 <input class="form-input" type="text" name="query" placeholder="Find more">
                 <button class="btn">search</button>
             </form>
-
+        </div>
     </nav>
+
+    <!-- Forms should not be inside ul, moved outside -->
+    <div class="form-popup" id="loginForm">
+        <form class="form-container">
+            <h2>Login</h2>
+            <label for="login-email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" id="login-email" name="email" required>
+            <label for="login-psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="login-psw" name="psw" required>
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm('loginForm')">Close</button>
+        </form>
+    </div>
+
+    <div class="form-popup" id="registerForm">
+        <form class="form-container">
+            <h2>Register</h2>
+            <label for="register-username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" id="register-username" name="username" required>
+            <label for="register-email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" id="register-email" name="email" required>
+            <label for="register-psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="register-psw" name="psw" required>
+            <button type="submit" class="btn">Register</button>
+            <button type="button" class="btn cancel" onclick="closeForm('registerForm')">Close</button>
+        </form>
+    </div>
+
     <div class="hr max-width-1 m-auto">
         <hr>
     </div>
@@ -89,44 +84,37 @@
         <hr>
     </div>
 
-
-    <DIV class="about-p  m-auto">
-        <h1>
-            Privacy Policy
-        </h1>
+    <div class="about-p m-auto">
+        <h1>Privacy Policy</h1>
         <p>
-           
-Please take a moment to familiarize yourself with our privacy practices and contact us if you have any questions. <br>
+            Please take a moment to familiarize yourself with our privacy practices and contact us if you have any questions. <br>
 
-<h2>Personal identification information</h2>
-We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, fill out a form, and in connection with other activities, services, features or resources we make available on our Site. Users may visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.
+            <h2>Personal identification information</h2>
+            We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, fill out a form, and in connection with other activities, services, features or resources we make available on our Site. Users may visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.
 
-<h2>Non-personal identification information</h2>
-We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information. We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.
+            <h2>Non-personal identification information</h2>
+            We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information. We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.
 
-<h2>Web browser cookies</h2>
-We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information. We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.
+            <h2>Web browser cookies</h2>
+            We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information. We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.
 
-<h2>Advertising</h2>
-Ads appearing on our site may be delivered to Users by advertising partners, who may set cookies. These cookies allow the ad server to recognize your computer each time they send you an online advertisement to compile non personal identification information about you or others who use your computer. This information allows ad networks to, among other things, deliver targeted advertisements that they believe will be of most interest to you. This privacy policy does not cover the use of cookies by any advertisers.
+            <h2>Advertising</h2>
+            Ads appearing on our site may be delivered to Users by advertising partners, who may set cookies. These cookies allow the ad server to recognize your computer each time they send you an online advertisement to compile non personal identification information about you or others who use your computer. This information allows ad networks to, among other things, deliver targeted advertisements that they believe will be of most interest to you. This privacy policy does not cover the use of cookies by any advertisers.
 
-<h2>Your acceptance of these terms</h2>
-By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.</p><br>
-
-        <p></p><br>
-
-        <p> Also share your valuable comments <a href="contact.html">Contact us</a> ⬅️ by clicking here ,we will response you as soon as possible .
-        </p><br>
-    </DIV>
+            <h2>Your acceptance of these terms</h2>
+            By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.
+        <p>
+        <br>
+        <p>Also share your valuable comments <a href="contact.html">Contact us</a> ⬅️ by clicking here, we will respond to you as soon as possible.</p>
+        <br>
+    </div>
 
     <script src="js/dropdown.js"></script>
     <script src="js/login.js"></script>
 
-
-    <div class="footer ">
-        <p>COPY RIGHT&COPY;ZBLOG.COM</p>
-        <a href="https://www.vecteezy.com/free-vector/business"> Business Vectors by Vecteezy</a>
-
+    <div class="footer">
+        <p>COPY RIGHT &COPY; ZBLOG.COM</p>
+        <a href="https://www.vecteezy.com/free-vector/business">Business Vectors by Vecteezy</a>
     </div>
 </body>
 
