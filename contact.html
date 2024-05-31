@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/blogpost.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/login.css">
+
+
+    <title>ZYLO-Tech blogs </title>
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto ">
+        <div class="nav-left"><a href="/"><span><img src="img's/zylo1.jpeg" alt="logo"></span></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+
+
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()" class="dropbtn">Dropdown🔻</button>
+                    <div id="myDropdown" class="dropdown-content">
+
+                        <button onclick="openForm('loginForm')" class="open-button">Login</button>
+                        <button onclick="openForm('registerForm')" class="open-button">Register</button>
+                        <button class="open-button"><a href="/video.html">video</a></button>
+
+                    </div>
+                </div>
+                <!-- login form  -->
+                <div class="form-popup" id="loginForm">
+                    <form class="form-container">
+                        <h2>Login</h2>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit" class="btn">Login</button>
+                        <button type="button" class="btn cancel" onclick="closeForm('loginForm')">Close</button>
+                    </form>
+                </div>
+
+                <!-- The Registration Form -->
+                <div class="form-popup" id="registerForm">
+                    <form class="form-container">
+                        <h2>Register</h2>
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="username" required>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit" class="btn">Register</button>
+                        <button type="button" class="btn cancel" onclick="closeForm('registerForm')">Close</button>
+                    </form>
+                </div>
+                <li><a href="/contact.html">Contact</a></li>
+
+
+            </ul>
+
+        </div>
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form-input" type="text" name="query" placeholder="Find more">
+                <button class="btn">search</button>
+            </form>
+        </div>
+
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+
+
+    <div class="contact-content max-width-1 m-auto font1">
+        <h2>Contact </h2><br>
+        <p>We can help you turn your idea into reality, take over your existing project, or extend your current
+            development team.</p>
+
+
+        <div class="contact-form ">
+            <div class="form-box">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form-box">
+                <input type="text" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="form-box">
+                <input type="text" placeholder="Enter Your Email I'd here">
+            </div>
+            <div class="form-box">
+                <textarea name="" id="" rows="10" cols="30" placeholder="Please write Here"></textarea>
+            </div>
+            <div class="form-box">
+                <button class="btn">Submit </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dropdown.js"></script>
+    <script src="js/login.js"></script>
+
+
+    <div class="footer ">
+        <p>COPY RIGHT&COPY;Zylotechblogs</p>
+        <a href="https://www.vecteezy.com/free-vector/business"> Business Vectors by Vecteezy</a>
+
+    </div>
+</body>
+
+</html>

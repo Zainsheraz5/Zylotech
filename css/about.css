@@ -1,0 +1,25 @@
+.about-p h1 {
+    font-family: var(--font1);
+    text-align: center;
+    font-size: 15vh;
+}
+
+.nav-left span img{
+    height: 10vh;              /*logo */
+    padding-top: 7px;    
+}
+
+.about-p {
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.884);
+    color: aliceblue;
+    text-align: center;
+    font-family: var(--font2);
+    font-size: 3.5vh;
+
+  
+}
+
+.about-img img {
+    width: 100%;
+}

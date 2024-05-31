@@ -1,0 +1,50 @@
+
+.nav-left span img{
+  height: 10vh;                   /*logo*/
+  padding-top: 7px;    
+}
+
+
+
+.contact-content {
+  height: 100vh;
+  margin-top: 32px;
+  padding: 9px;
+  position: relative;
+  overflow: hidden;
+  /* background-color: #58ff29; */
+  /* color: transparent; */
+}
+
+.contact-content h2 {
+  margin: 20px 0px 0px 2px;
+  color: aliceblue;
+  
+
+}
+.contact-content p{
+  padding-left: 25px;
+  color: aliceblue;
+  font-family: var(--font1);
+}
+
+.contact-form {
+  margin: 20px 0px 0px 38px;
+}
+
+.contact-content::after {
+  content: "";
+  background-image: url("../img's/a-sleek-and-modern-3d-render-of-a-tech-blogging-we-4uwgkMzlTsO9nsmxmQVTQw-JFJZPJKET7ioXEgDk8xCtQ.jpeg") ;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: inherit;
+  opacity: 0.85;
+  border-radius: 12px;
+  z-index: -1;
+}
+
+
+
+
+
